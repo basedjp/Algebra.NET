@@ -5,7 +5,7 @@ using RedAlgebra.NET;
 namespace Algebra_Assert
 {
     [TestClass]
-    public class UnitTest1
+    public class BasicTests
     {
         [TestMethod]
         public void TestDihedralGroup()
@@ -58,6 +58,7 @@ namespace Algebra_Assert
         {
             ModularRing R = new ModularRing(12);
 
+            // Ensure addution and multiplication work correctly
             for (int i = 0; i < R.Modulus; i++)
             {
                 Assert.AreEqual(R.Add(i, R.AdditiveStructure.Inverse(i)), R.AdditiveIdentity);

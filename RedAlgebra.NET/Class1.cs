@@ -28,20 +28,39 @@ namespace RedAlgebra.NET
             T Inverse(T a);
         }
 
+        // Monoid under addition and multiplication
         public interface ISemiRing<T> {
             IMonoid<T> AdditiveStructure { get; }
             IMonoid<T> MultiplicativeStructure { get; }
         }
 
+        // Abelian group under addition, monoid under multiplication
         public interface IRing<T, TGroup, TMonoid> 
             where TGroup : IGroup<T>
             where TMonoid : IMonoid<T>
         {
             TGroup AdditiveStructure { get; }
             TMonoid MultiplicativeStructure { get; }
+
+            T Add(T r, T s);
+            T Multiply(T r, T s);
+        }
+
+        // Abelian group under addition and multiplication
+        public interface IField<T, TAddGroup, TMulGroup>
+            where TAddGroup : IGroup<T>
+            where TMulGroup : IGroup<T>
+        {
+            TAddGroup AdditiveStructure { get; }
+            TMulGroup MultiplicativeStructure { get; }
         }
     }
 
+    /// <summary>
+    /// In all classes, Equals() is overridden in such a way as to mean "Isomorphic to" and not "Equal to"
+    /// </summary>
+
+    // Multiplicative modular monoid
     public class ModularMonoid : Scaffolding.IMonoid<int>
     {
         public int Identity { get; } = 1;
@@ -52,6 +71,7 @@ namespace RedAlgebra.NET
             return (a * b) % Modulus;
         }
 
+        // Operators for casting purposes
         public static implicit operator ModularGroup (ModularMonoid x)
         {
             return new ModularGroup(x.Modulus);
@@ -82,24 +102,21 @@ namespace RedAlgebra.NET
     // Modular groups, this is an implementation of Zn for arbitrary n
     public class ModularGroup : Scaffolding.IGroup<int>
     {
-        // Modular addition
         public int Operation(int n, int m)
         {
             return (n + m) % Modulus;
         }
 
-        // 0
         public int Identity { get; } = 0;
 
-        // Get from user
         public int Modulus { get; }
 
-        // Algorithm to return the inverse of an element mod n
         public int Inverse(int a)
         {
             return Modulus - (a % Modulus);
         }
 
+        // Operators for casting purposes
         public static implicit operator ModularMonoid (ModularGroup x)
         {
             return new ModularMonoid(x.Modulus);
@@ -110,7 +127,6 @@ namespace RedAlgebra.NET
             return new ModularRing(x.Modulus);
         }
 
-        // Override for Equals so Assert.AreEqual works
         public override bool Equals(object obj)
         {
             if (obj is ModularGroup)
@@ -122,7 +138,6 @@ namespace RedAlgebra.NET
             return false;
         }
 
-        // Constructor -- the group depends only on the modulus
         public ModularGroup(int modulus)
         {
             Modulus = modulus;
@@ -170,7 +185,6 @@ namespace RedAlgebra.NET
             return new DihedralGroupElement(t, this, newPower);
         }
 
-        // Override for Equals so Assert.AreEqual works
         public override bool Equals(object obj)
         {
             if (obj is DihedralGroup)
@@ -182,7 +196,6 @@ namespace RedAlgebra.NET
             return false;
         }
 
-        // Constructor - group relies only on size
         public DihedralGroup(int size)
         {
             PolySize = size;
@@ -198,7 +211,6 @@ namespace RedAlgebra.NET
         public int power { get; set; }
         public Transformation type { get; set; }
 
-        // Override for Equals so Assert.AreEqual works
         public override bool Equals(object obj)
         {
             if (obj is DihedralGroupElement)
@@ -229,21 +241,27 @@ namespace RedAlgebra.NET
         }
     }
 
+    // Z mod n viewed w/ a ring structure
     public class ModularRing : Scaffolding.IRing<int, ModularGroup, ModularMonoid>
     {
+        // The monoid and group will have the same modulus
         public ModularGroup AdditiveStructure { get; }
         public ModularMonoid MultiplicativeStructure { get; }
 
+        // Set in constructor so user doesn't have to access Ring.typeofStructure.Modulus
         public int Modulus { get; }
 
+        // Similar reasoning to the above
         public int AdditiveIdentity { get; }
         public int MultiplicativeIdentity { get; }
 
+        // Shortcut to modular addition
         public int Add(int m, int n)
         {
             return AdditiveStructure.Operation(m, n);
         }
 
+        // Shortcut to modular multiplication
         public int Multiply(int m, int n)
         {
             return MultiplicativeStructure.Operation(m, n);
@@ -290,13 +308,5 @@ namespace RedAlgebra.NET
         Rotation,
         Reflection,
         Identity
-    }
-
-    public enum Structure
-    {
-        Monoid,
-        Group,
-        Ring,
-        Field
     }
 }

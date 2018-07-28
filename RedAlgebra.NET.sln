@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedAlgebra.NET", "RedAlgebra.NET\RedAlgebra.NET.csproj", "{C2DD0A39-034C-42F8-BBD8-3F08841CF504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra-Assert", "Algebra-Assert\Algebra-Assert.csproj", "{4A81FCDC-B915-46D9-9970-2059786CBA40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2DD0A39-034C-42F8-BBD8-3F08841CF504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DD0A39-034C-42F8-BBD8-3F08841CF504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DD0A39-034C-42F8-BBD8-3F08841CF504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DD0A39-034C-42F8-BBD8-3F08841CF504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A81FCDC-B915-46D9-9970-2059786CBA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A81FCDC-B915-46D9-9970-2059786CBA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A81FCDC-B915-46D9-9970-2059786CBA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A81FCDC-B915-46D9-9970-2059786CBA40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

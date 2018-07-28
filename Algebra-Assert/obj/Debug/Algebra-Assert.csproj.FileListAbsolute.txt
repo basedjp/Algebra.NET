@@ -1,0 +1,14 @@
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Algebra-Assert.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Algebra-Assert.pdb
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\RedAlgebra.NET.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\RedAlgebra.NET.pdb
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\obj\Debug\Algebra-Assert.csprojResolveAssemblyReference.cache
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\obj\Debug\Algebra-Assert.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\Algebra-Assert\obj\Debug\Algebra-Assert.pdb

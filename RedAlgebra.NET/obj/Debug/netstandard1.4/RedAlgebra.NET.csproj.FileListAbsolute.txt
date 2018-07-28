@@ -1,0 +1,7 @@
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\bin\Debug\netstandard1.4\RedAlgebra.NET.deps.json
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\bin\Debug\netstandard1.4\RedAlgebra.NET.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\bin\Debug\netstandard1.4\RedAlgebra.NET.pdb
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\obj\Debug\netstandard1.4\RedAlgebra.NET.csprojResolveAssemblyReference.cache
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\obj\Debug\netstandard1.4\RedAlgebra.NET.AssemblyInfo.cs
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\obj\Debug\netstandard1.4\RedAlgebra.NET.dll
+C:\Users\lucky\documents\visual studio 2017\Projects\RedAlgebra.NET\RedAlgebra.NET\obj\Debug\netstandard1.4\RedAlgebra.NET.pdb
